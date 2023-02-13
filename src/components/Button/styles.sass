@@ -1,0 +1,29 @@
+@import 'src/styles/common'
+
+.button
+  all: unset
+  height: 100px
+  width: 100px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #fff
+  color: $color-primary
+  font-size: $font-size-2xl
+  box-shadow: 0 20px 40px rgba($color-black, 0.1)
+  cursor: pointer
+
+  &:hover
+    background-color: $color-primary
+    color: $color-white
+
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1rem
+
+  &__label
+    font-size: $font-size-sm
+    color: rgba($color-black, 0.6)

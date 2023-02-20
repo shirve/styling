@@ -3,65 +3,70 @@
 .header
 
   &__label
+    border-bottom: 2px solid $color-white-100
+    color: $color-white-100
     font-size: $font-size-base
     font-weight: $font-weight-bold
-    color: $color-white
+    padding-bottom: $m-base
     text-transform: uppercase
-    border-bottom: 2px solid $color-white
     width: fit-content
-    padding-bottom: 1rem
 
   &__content
+    border-top: 2px solid $color-white-4d
     display: flex
     flex-direction: column
-    gap: 2rem
-    border-top: 2px solid rgba($color-white, 0.3)
+    gap: $m-lg
     margin-top: -2px
 
     &-title
+      color: $color-white-100
       font-size: 8rem
       font-weight: $font-weight-bold
-      color: $color-white
       margin-left: -10px
 
     &-subtitle
+      color: $color-white-100
       font-size: $font-size-xl
       font-weight: $font-weight-bold
-      color: $color-white
 
     &-description
+      border-left: 2px solid $color-white-100
+      color: $color-white-100
       display: flex
       flex-direction: column
-      gap: 0.5rem
       font-size: $font-size-lg
-      color: $color-white
-      border-left: 2px solid $color-white
-      padding-left: 1rem
+      gap: $m-sm
+      padding-left: $m-base
 
   &__button
+    color: $color-white-100
     display: flex
-    margin-top: 3rem
-    color: $color-white
+    margin-top: $m-2xl
     text-decoration: none
 
     &-text
-      font-weight: $font-weight-bold
+      background-color: $color-white-4d
       font-size: $font-size-lg
-      padding: 1rem 2rem
-      background-color: rgba($color-white, 0.3)
+      font-weight: $font-weight-bold
+      padding: $m-base $m-lg
 
     &-icon
-      display: flex
-      align-items: center
-      font-size: $font-size-xl
-      background-color: $color-white
-      color: $color-primary
-      padding: 0.75rem 1.25rem
+      fill: $color-primary
+      height: 24px
+      width: 24px
+
+      &-wrapper
+        align-items: center
+        background-color: $color-white-100
+        color: $color-primary
+        display: flex
+        font-size: $font-size-xl
+        padding: $m-base
 
 @include breakpoint(small)
 
   .header
     &__content
       &-title
-        margin-left: -5px
         font-size: 4rem
+        margin-left: -5px

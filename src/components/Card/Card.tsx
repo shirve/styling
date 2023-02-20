@@ -11,10 +11,10 @@ const Card = ({
 }) => {
   return (
     <div className="card">
-      <img src={img} className="card__image" alt="card" />
+      <img src={img} className="card__image" alt="" />
       <div className="card__content">
-        <div className="card__content-label">{label}</div>
-        <div className="card__content-title">{title}</div>
+        <div className="card__label">{label}</div>
+        <div className="card__title">{title}</div>
       </div>
     </div>
   );

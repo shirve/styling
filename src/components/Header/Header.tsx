@@ -1,4 +1,4 @@
-import { FiArrowRight } from "react-icons/fi";
+import { ArrowRightIcon } from "../icons/ArrowRightIcon";
 
 import "./styles.sass";
 
@@ -18,8 +18,8 @@ const Header = () => {
       </div>
       <a href="/booking" className="header__button">
         <span className="header__button-text">Let's Go</span>
-        <span className="header__button-icon">
-          <FiArrowRight />
+        <span className="header__button-icon-wrapper">
+          <ArrowRightIcon className="header__button-icon" />
         </span>
       </a>
     </div>

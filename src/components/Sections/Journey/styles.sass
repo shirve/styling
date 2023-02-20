@@ -1,45 +1,43 @@
 @import 'src/styles/common'
 
 .journey
-  &__wrapper
-    display: flex
-    flex-direction: column
-    gap: 6rem
-    padding: 4rem
+  display: flex
+  flex-direction: column
+  gap: $m-2xl
+  padding: $m-xl
 
   &__header
+    align-items: center
     display: flex
     flex-direction: column
-    align-items: center
-    gap: 2rem
+    gap: $m-lg
 
     &::before
-      content: ''
-      width: 60px
-      height: 8px
       background: $color-primary
-      border-radius: 5px
-      margin-top: 2rem
+      border-radius: $border-radius-base
+      content: ''
+      height: 8px
+      margin-top: $m-lg
+      width: 60px
 
     &-title
+      color: $color-black
       font-size: $font-size-3xl
       font-weight: $font-weight-bold
-      color: $color-black
 
     &-description
+      color: $color-black-300
       font-size: $font-size-base
-      color: rgba($color-black, 0.3)
 
   &__content
     display: grid
+    gap: $m-xl 0
     grid-template-columns: repeat(3, 1fr)
-    gap: 4rem 0
 
 @include breakpoint(small)
 
   .journey
-    &__wrapper
-      padding: 2rem
+    padding: $m-lg
 
     &__header
       text-align: center

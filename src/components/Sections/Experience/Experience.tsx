@@ -1,24 +1,27 @@
-import { IoPlayCircle } from "react-icons/io5";
 import Card from "../../Card/Card";
+import { PlayCircleIcon } from "../../icons/PlayCircleIcon";
 
 import "./styles.sass";
 
 const Experience = () => {
   return (
-    <div className="experience__wrapper">
+    <section className="experience">
       <div className="experience__content">
         <div className="experience__content-header">
-          <div className="experience__content-label">The Zabdos Experience</div>
-          <div className="experience__content-description">
+          <header className="experience__content-label">
+            The Zabdos Experience
+          </header>
+          <p className="experience__content-description">
             Whether it's your first flight or simply your latest, we work to
             anticipate your every need
-          </div>
+          </p>
           <div className="experience__content-button">
-            <IoPlayCircle /> Watch the full video now!
+            <PlayCircleIcon className="experience__content-button-icon" /> Watch
+            the full video now!
           </div>
         </div>
-        <div className="experience__content__cards-wrapper">
-          <div className="experience__content__cards">
+        <div className="experience__cards-wrapper">
+          <div className="experience__cards">
             <Card
               label="Arrive inspired"
               title="Business Class"
@@ -37,7 +40,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

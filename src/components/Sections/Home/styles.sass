@@ -1,17 +1,16 @@
 @import 'src/styles/common'
 
 .home
-  &__wrapper
-    background-image: linear-gradient(to bottom, transparent 50%, $color-white), url(../../../assets/background.jpg)
-    background-size: cover
+  background-image: linear-gradient(to bottom, transparent 50%, $color-white-100), url(../../../assets/background.jpg)
+  background-size: cover
 
   &__content
     display: flex
     flex-direction: column
-    gap: 8rem
-    padding: 4rem
+    gap: $m-3xl
+    padding: $m-xl
 
 @include breakpoint(mobile)
 
   .home__content
-    padding: 2rem
+    padding: $m-lg

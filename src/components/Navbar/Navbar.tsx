@@ -1,13 +1,13 @@
-import { FaPaperPlane } from "react-icons/fa";
-import { CgMenu } from "react-icons/cg";
+import { PlaneIcon } from "../icons/PlaneIcon";
+import { MenuIcon } from "../icons/MenuIcon";
 
 import "./styles.sass";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <a href="/" className="navbar__logo">
-        <FaPaperPlane />
+        <PlaneIcon className="navbar__logo-icon" />
         Zabdos
       </a>
       <div className="navbar__links-wrapper">
@@ -15,20 +15,20 @@ const Navbar = () => {
           <a className="navbar__link" href="/status">
             Flight Status
           </a>
-          <a className="navbar__link navbar__link--outlined" href="/checkin">
+          <a className="navbar__link -outlined" href="/checkin">
             Check In
           </a>
           <img
             src="https://i.pinimg.com/736x/d6/a9/57/d6a957f1d8045c9c973c12bf5968326f.jpg"
             className="navbar__avatar"
-            alt="avatar"
+            alt="User Profile Avatar"
           />
         </div>
         <button className="navbar__menu">
-          <CgMenu />
+          <MenuIcon className="navbar__menu-icon" />
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 

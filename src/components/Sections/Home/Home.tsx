@@ -6,13 +6,13 @@ import "./styles.sass";
 
 const Home = () => {
   return (
-    <div className="home__wrapper">
+    <section className="home">
       <Navbar />
       <div className="home__content">
         <Header />
         <Search />
       </div>
-    </div>
+    </section>
   );
 };
 

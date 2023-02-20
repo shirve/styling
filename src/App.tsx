@@ -4,11 +4,11 @@ import Journey from "./components/Sections/Journey/Journey";
 
 function App() {
   return (
-    <>
+    <main>
       <Home />
       <Experience />
       <Journey />
-    </>
+    </main>
   );
 }
 

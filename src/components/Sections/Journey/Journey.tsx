@@ -12,13 +12,15 @@ import "./styles.sass";
 
 const Journey = () => {
   return (
-    <div className="journey__wrapper">
+    <section className="journey">
       <div className="journey__header">
-        <div className="journey__header-title">Complement Your Journey</div>
-        <div className="journey__header-description">
+        <header className="journey__header-title">
+          Complement Your Journey
+        </header>
+        <p className="journey__header-description">
           Explore the additional services we offer to make your journey even
           more memorable
-        </div>
+        </p>
       </div>
       <div className="journey__content">
         <Button label="Manage Booking" icon={<IoCalendarClearOutline />} />
@@ -28,7 +30,7 @@ const Journey = () => {
         <Button label="AI Maha Services" icon={<IoConstructOutline />} />
         <Button label="Car Rentals" icon={<IoCarSportOutline />} />
       </div>
-    </div>
+    </section>
   );
 };
 

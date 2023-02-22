@@ -4,13 +4,13 @@
   display: flex
 
   &__icon
-    fill: $color-black-300
+    fill: $color-neutral-400
     height: 40px
     width: 40px
 
     &-wrapper
-      background-color: $color-white-4d
-      color: $color-black-300
+      background-color: $color-white-transparent
+      color: $color-neutral-400
       display: flex
       font-size: $font-size-2xl
       justify-content: center
@@ -18,7 +18,7 @@
 
   &__content
     align-items: center
-    background-color: $color-white-100
+    background-color: $color-neutral-200
     display: flex
     flex: 1
     justify-content: space-around
@@ -29,7 +29,7 @@
       gap: $m-sm
 
       &-label
-        color: $color-black-300
+        color: $color-neutral-400
         font-size: $font-size-sm
 
       &-select
@@ -40,9 +40,12 @@
         font-weight: $font-weight-bold
         gap: $m-sm
 
+        svg
+          height: 16px
+
   &__button
     background-color: $color-primary
-    color: $color-white-100
+    color: $color-neutral-200
     font-size: $font-size-lg
     font-weight: $font-weight-bold
     padding: $m-lg $m-xl
@@ -54,7 +57,7 @@
     flex-direction: column
     gap: $m-base
 
-    &__icon
+    &__icon-wrapper
       display: none
 
     &__content

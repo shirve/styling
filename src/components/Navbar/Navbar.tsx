@@ -1,5 +1,4 @@
-import { PlaneIcon } from "../icons/PlaneIcon";
-import { MenuIcon } from "../icons/MenuIcon";
+import { MenuIcon, PlaneIcon } from "../icons";
 
 import "./styles.sass";
 

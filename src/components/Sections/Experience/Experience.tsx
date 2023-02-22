@@ -1,5 +1,5 @@
 import Card from "../../Card/Card";
-import { PlayCircleIcon } from "../../icons/PlayCircleIcon";
+import { PlayCircleIcon } from "../../icons";
 
 import "./styles.sass";
 
@@ -7,11 +7,11 @@ const Experience = () => {
   return (
     <section className="experience">
       <div className="experience__content">
-        <div className="experience__content-header">
-          <header className="experience__content-label">
+        <div className="section-header -flex-1">
+          <header className="section-header__title -single-word-spacing">
             The Zabdos Experience
           </header>
-          <p className="experience__content-description">
+          <p className="section-header__description">
             Whether it's your first flight or simply your latest, we work to
             anticipate your every need
           </p>

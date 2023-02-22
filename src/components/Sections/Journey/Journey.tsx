@@ -13,11 +13,11 @@ import "./styles.sass";
 const Journey = () => {
   return (
     <section className="journey">
-      <div className="journey__header">
-        <header className="journey__header-title">
+      <div className="section-header -center">
+        <header className="section-header__title">
           Complement Your Journey
         </header>
-        <p className="journey__header-description">
+        <p className="section-header__description">
           Explore the additional services we offer to make your journey even
           more memorable
         </p>

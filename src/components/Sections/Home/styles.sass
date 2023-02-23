@@ -1,0 +1,16 @@
+@import 'src/styles/common'
+
+.home
+  background-image: linear-gradient(to bottom, transparent 50%, $color-neutral-200), url(../../../assets/background.jpg)
+  background-size: cover
+
+  &__content
+    display: flex
+    flex-direction: column
+    gap: $m-3xl
+    padding: $m-xl
+
+@include breakpoint(mobile)
+
+  .home__content
+    padding: $m-lg

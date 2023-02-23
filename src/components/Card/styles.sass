@@ -1,0 +1,36 @@
+@import 'src/styles/common'
+
+.card
+  box-shadow: -5px 5px 40px $color-neutral-300
+  display: flex
+  flex-direction: column
+  height: fit-content
+  z-index: 0
+
+  &__image
+    object-fit: cover
+
+  &__content
+    background-color: $color-white
+    display: flex
+    flex-direction: column
+    gap: $m-sm
+    padding: $m-base $m-lg
+
+  &__title
+    color: $color-black
+    font-size: $font-size-lg
+    font-weight: $font-weight-bold
+
+  &__label
+    border-bottom: 1px solid $color-neutral-300
+    color: $color-neutral-400
+    font-size: $font-size-xs
+    padding-bottom: $m-sm
+    text-transform: uppercase
+    width: fit-content
+
+@include breakpoint(small)
+
+  .card__image
+    height: 200px

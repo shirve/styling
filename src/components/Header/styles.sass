@@ -1,0 +1,73 @@
+@import 'src/styles/common'
+
+.header
+
+  &__label
+    border-bottom: 2px solid $color-neutral-200
+    color: $color-neutral-200
+    font-size: $font-size-base
+    font-weight: $font-weight-bold
+    padding-bottom: $m-base
+    text-transform: uppercase
+    width: fit-content
+
+  &__content
+    border-top: 2px solid $color-white-transparent
+    display: flex
+    flex-direction: column
+    gap: $m-lg
+    margin-top: -2px
+
+    &-title
+      color: $color-neutral-200
+      font-size: 8rem
+      font-weight: $font-weight-bold
+      margin-left: -10px
+
+    &-subtitle
+      color: $color-neutral-200
+      font-size: $font-size-xl
+      font-weight: $font-weight-bold
+
+    &-description
+      border-left: 2px solid $color-neutral-200
+      color: $color-neutral-200
+      display: flex
+      flex-direction: column
+      font-size: $font-size-lg
+      gap: $m-sm
+      padding-left: $m-base
+
+  &__button
+    color: $color-neutral-200
+    display: flex
+    margin-top: $m-2xl
+    text-decoration: none
+    width: fit-content
+
+    &-text
+      background-color: $color-white-transparent
+      font-size: $font-size-lg
+      font-weight: $font-weight-bold
+      padding: $m-base $m-lg
+
+    &-icon
+      fill: $color-primary
+      height: 24px
+      width: 24px
+
+      &-wrapper
+        align-items: center
+        background-color: $color-neutral-200
+        color: $color-primary
+        display: flex
+        font-size: $font-size-xl
+        padding: $m-base
+
+@include breakpoint(small)
+
+  .header
+    &__content
+      &-title
+        font-size: 4rem
+        margin-left: -5px

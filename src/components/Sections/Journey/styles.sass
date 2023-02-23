@@ -1,0 +1,30 @@
+@import 'src/styles/common'
+
+.journey
+  display: flex
+  flex-direction: column
+  gap: $m-2xl
+  padding: $m-xl
+
+  &__content
+    display: grid
+    gap: $m-xl 0
+    grid-template-columns: repeat(3, 1fr)
+
+@include breakpoint(small)
+
+  .journey
+    padding: $m-lg
+
+    &__header
+      text-align: center
+
+      &-title
+        font-size: $font-size-2xl
+
+      &-description
+        font-size: $font-size-lg
+
+    &__content
+      display: grid
+      grid-template-columns: repeat(2, 1fr)

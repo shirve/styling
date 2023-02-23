@@ -1,0 +1,66 @@
+@import 'src/styles/common'
+
+.experience
+  padding: $m-lg $m-xl
+
+  &__content
+    display: flex
+    gap: $m-xl
+
+    &-button
+      align-items: center
+      border-top: 1px solid $color-neutral-300
+      color: $color-neutral-400
+      display: flex
+      font-size: $font-size-sm
+      gap: $m-base
+      padding-top: $m-base
+
+      &-icon
+        fill: $color-primary
+        height: 40px
+        width: 40px
+
+  &__cards
+    display: grid
+    gap: $m-lg $m-base
+    grid-template-columns: repeat(2, 1fr)
+
+    &-wrapper
+      flex: 2
+
+    .card:nth-child(2)
+      z-index: 1
+      grid-column: 2
+      grid-row: 1 / 3
+
+    .card:nth-child(3)
+      position: relative
+      right: -30px
+
+@include breakpoint(small)
+
+  .experience
+    &__wrapper
+      padding: $m-lg
+
+    &__content
+      flex-direction: column
+
+      &-label
+        font-size: $font-size-2xl
+        word-spacing: 0
+
+      &-description
+        font-size: $font-size-lg
+
+      &-button
+        font-size: $font-size-base
+
+    &__cards
+      display: flex
+      flex-direction: column
+
+      .card:nth-child(3)
+        position: relative
+        right: 0

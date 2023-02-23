@@ -1,0 +1,68 @@
+@import 'src/styles/common'
+
+.search
+  display: flex
+
+  &__icon
+    fill: $color-neutral-400
+    height: 40px
+    width: 40px
+
+    &-wrapper
+      background-color: $color-white-transparent
+      color: $color-neutral-400
+      display: flex
+      font-size: $font-size-2xl
+      justify-content: center
+      padding: $m-lg
+
+  &__content
+    align-items: center
+    background-color: $color-neutral-200
+    display: flex
+    flex: 1
+    justify-content: space-around
+
+    &-item
+      display: flex
+      flex-direction: column
+      gap: $m-sm
+
+      &-label
+        color: $color-neutral-400
+        font-size: $font-size-sm
+
+      &-select
+        align-items: center
+        color: $color-black
+        display: flex
+        font-size: $font-size-lg
+        font-weight: $font-weight-bold
+        gap: $m-sm
+
+        svg
+          height: 16px
+
+  &__button
+    background-color: $color-primary
+    color: $color-neutral-200
+    font-size: $font-size-lg
+    font-weight: $font-weight-bold
+    padding: $m-lg $m-xl
+
+@include breakpoint(small)
+
+  .search
+    display: flex
+    flex-direction: column
+    gap: $m-base
+
+    &__icon-wrapper
+      display: none
+
+    &__content
+      padding: $m-lg 0
+
+    &__button
+      padding: $m-lg
+      text-align: center

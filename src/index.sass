@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap')
+@import 'src/styles/common'
+
+body
+  margin: 0
+  font-family: 'Lato', sans-serif
+  background-color: $color-neutral-200
+
+button
+  appearance: none
+  background-color: transparent
+  border: none
+  cursor: pointer
+  padding: 0
+
+img
+  max-width: 100%
+
+.section-header
+  display: flex
+  flex-direction: column
+  gap: $m-lg
+
+  &.-center
+    align-items: center
+
+  &.-flex-1
+    flex: 1 0
+
+  &::before
+    background-color: $color-primary
+    border-radius: $border-radius-base
+    content: ''
+    height: 8px
+    margin-top: $m-lg
+    width: 60px
+
+  &__title
+    color: $color-black
+    font-size: $font-size-3xl
+    font-weight: $font-weight-bold
+
+    &.-single-word-spacing
+      word-spacing: 100vw
+
+  &__description
+    color: $color-neutral-400
+    font-size: $font-size-base
